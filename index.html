@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Zapatos</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com">
+    function toggleMenu() {
+  const menu = document.getElementById("menuMobile");
+  menu.classList.toggle("hidden");
+}
+  </script>
+ 
+ 
+</head>
+<body class="bg-gray-500 font-sans">
+
+<header class="bg-pink-400 text-white p-4 flex justify-between items-center shadow-lg">
+  <h1 class="text-2xl font-bold">ZapatoStore</h1>
+</header>
+
+<section class="bg-[url('images/portada')] bg-cover bg-center h-96 flex items-center justify-center text-white">
+  <div class="bg-black/50 p-6 rounded-2xl text-center">
+    <h2 class="text-3xl font-bold">Sandalias y Zapatillas</h2>
+    <p class="mt-2">Bienvenidos a nuestro espacio✨,</p>
+    <p class="mt-2">donde el stock es limitado pero siempre hay un par esperando por vos😜-</p>
+    <p class="mt-2">Coordinamos?</p>
+
+  </div>
+</section>
+
+
+<header class="p-2 bg-yellow-100 text-xl font-bold text-center text-gray-400 ">
+  <h1>
+  <nav class="space-x-6"><button onclick="toggleMenu()">☰</button>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Contacto</a>
+  </nav>
+  </h1>
+</header>
+  <div id="menuMobile" class="hidden flex flex-col mt-4 space-y-2 text-gray-700 text-sm md:hidden">
+    <a href="#" class="hover:text-pink-500">Inicio</a>
+    <a href="#productos" class="hover:text-pink-500">Productos</a>
+    <a href="#" class="hover:text-pink-500">Contacto</a>
+  </div>
+</header>
+<section id="productos" class="p-8 bg-yellow-50">
+  <h2 class="text-3xl font-bold mb-8 text-center text-gray-600">Productos</h2>
+
+<section class="productos">
+  <div class="producto">
+    <img src="zapato1.jpg" alt="Zapato 1">
+    <h3>Zapatilla Urbana</h3>
+    <p>$25.000</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="producto">
+    <img src="zapato2.jpg" alt="Zapato 2">
+    <h3>Zapato Elegante</h3>
+    <p>$40.000</p>
+    <button>Comprar</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Tienda de zapatos</p>
+</footer>
+
+</body>
+</html>
